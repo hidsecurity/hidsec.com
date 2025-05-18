@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-black text-green-300 font-sans;
+  overflow-x: hidden;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 34, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 0, 0.3);
+}
+
+/* Selection styling */
+::selection {
+  background: rgba(0, 255, 0, 0.2);
+  color: #ffffff;
+}
+
+/* For Firefox */
+::-moz-selection {
+  background: rgba(0, 255, 0, 0.2);
+  color: #ffffff;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
